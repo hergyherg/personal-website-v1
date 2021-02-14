@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  {% include head.html %}
+  <body class="blog">
+    {% include blog-navbar.html %}
+    {% include sidebar.html %}
+    <div class="container-fluid">
+      <main class="content">
+        <div class="container">
+          <div class="blog-posts-wrapper">
+          {{ content }}
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

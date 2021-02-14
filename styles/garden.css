@@ -1,0 +1,99 @@
+/* Blog main page */
+body.blog{
+  position: relative;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  background-color: var(--off-white); /* barely off-white */
+  color:  var(--dark-blue);
+}
+
+.blog > .container-fluid > main.content {
+  margin-left: 300px;
+  padding: 75px 0px 10px 0px;
+}
+
+
+.blog-posts-wrapper {
+  width: 70%;
+  margin: auto;
+}
+
+.blog-posts-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-auto-rows: auto;
+  grid-row-gap: 20px;
+}
+
+.blog-posts {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.blog-posts > a {
+  color:  var(--dark-blue);
+}
+
+.blog-posts:hover > a {
+  color: var(--comfort-red);
+  text-decoration: none;
+}
+
+.blog-posts:hover > a > h5 > span {
+  color: var(--comfort-red);
+}
+
+.blog-posts > a > p {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.blog-posts > a > h5 > span {
+  color: var(--dark-grey);
+  font-size: .9rem
+}
+
+@media screen and (max-width: 768px) {
+  div.blog-posts-wrapper {
+    width: 80%;
+  }
+
+  .blog > .container-fluid > main.content {
+    margin-left: auto;
+  }
+
+  div.books-container {
+    display: block;
+    text-align: center;
+  }
+
+  div.book-details {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  div.blog-posts-wrapper {
+    width: 90%;
+  }
+}
+
+/* Bookshelf / reading page */
+.books-container {
+  display: grid;
+  grid-template-columns: 210px auto;
+  grid-auto-rows: 1fr;
+  grid-row-gap: 50px;
+}
+
+.book-photo > img {
+  height: 300px;
+  -webkit-box-shadow: 0px 0px 10px #c0c0c0;
+  -moz-box-shadow: 0px 0px 10px #c0c0c0;
+  -ms-box-shadow: 0px 0px 10px #c0c0c0;
+  -o-box-shadow: 0px 0px 10px #c0c0c0;
+  box-shadow: 0px 0px 10px #c0c0c0;
+}
+
+.book-details {
+  padding: 10px;
+}

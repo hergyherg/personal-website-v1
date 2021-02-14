@@ -1,0 +1,13 @@
+---
+title: Notes
+layout: jumbotron
+permalink: /notes
+---
+<div class="blog-posts-container">
+  {% for post in site.posts %}
+    <div class="blog-posts">
+      <h5><span>[{{ post.date | date: "%Y-%m-%d" }}] </span>{{ post.title }}</h5>
+      <p>{{ post.description }}</p>
+    </div>
+  {% endfor %}
+</div>

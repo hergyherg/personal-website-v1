@@ -1,0 +1,27 @@
+div.two-col-grid {
+  display: grid;
+  grid-template-columns: calc(50%-5px) calc(50%-5px);
+  grid-template-rows: auto;
+  grid-column-gap: 10px;
+}
+
+.two-col-grid .left-col {
+  grid-column: 1;
+  max-width: 400px;
+  min-width: 300px;
+}
+
+.two-col-grid .right-col {
+  grid-column: 2;
+}
+
+@media screen and (max-width: 767px) {
+  div.two-col-grid {
+    display: block;
+  }
+
+  .two-col-grid .left-col {
+    margin: 0 auto 25px;
+    text-align: center;
+  }
+}

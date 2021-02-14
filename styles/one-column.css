@@ -1,0 +1,24 @@
+div.one-column {
+  width: 60%;
+  margin: auto;
+  overflow: hidden;
+  /* min-width: 300px; */
+}
+
+div.one-column > h1.title {
+  font-size: 3.5em;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 767px) {
+  div.one-column {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  div.one-column {
+    width: 90%;
+  }
+}

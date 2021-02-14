@@ -1,0 +1,100 @@
+/* From https://blog.fullstackdigital.com/how-to-create-a-flawless-responsive-post-grid-with-flexbox-e5c7cc9d28e */
+
+.grid-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.grid-item {
+  height: 400px;
+  flex-basis: calc(25% - 40px);
+  -ms-flex: auto;
+  width: 25%;
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: white;
+  margin: 20px 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 6px 8px 6px -6px #999;
+  -moz-box-shadow: 6px 8px 6px -6px #999;
+  box-shadow: 6px 8px 6px -6px #999;
+}
+
+.grid-item-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.grid-image-top {
+  height: 45%;
+  width: calc(100% + 20px);
+  background-size: cover;
+  position: relative;
+  background-position: 50% 50%;
+  left: -10px;
+  top: -10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.grid-image-top.blue-gradient {
+  background: -webkit-gradient(linear,left top, left bottom,from(#063f9c),to(#011638));
+  background: -webkit-linear-gradient(#063f9c,#011638);
+  background: -o-linear-gradient(#063f9c,#011638);
+  background: linear-gradient(#063f9c,#011638);
+}
+
+.grid-image-top.red-gradient {
+  background: -webkit-gradient(linear,left top, left bottom,from(#d33f49),to(#961a23));
+  background: -webkit-linear-gradient(#d33f49,#961a23);
+  background: -o-linear-gradient(#d33f49,#961a23);
+  background: linear-gradient(#d33f49,#961a23);
+}
+
+.grid-image-top.green-gradient {
+  background: -webkit-gradient(linear,left top, left bottom,from(#00fca6),to(#0a9e6c));
+  background: -webkit-linear-gradient(#00fca6,#0a9e6c);
+  background: -o-linear-gradient(#00fca6,#0a9e6c);
+  background: linear-gradient(#00fca6,#0a9e6c);
+}
+
+.grid-image-top.grey-gradient {
+  background: -webkit-gradient(linear,left top, left bottom,from(#999ea3),to(#545759));
+  background: -webkit-linear-gradient(#999ea3,#545759);
+  background: -o-linear-gradient(#999ea3,#545759);
+  background: linear-gradient(#999ea3,#545759);
+}
+
+.item-content > span {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.item-title {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.item-category {
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.item-description {
+  margin-bottom: 20px;
+  display: block;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+  .grid-item {
+    flex-basis: calc(50% - 40px);
+  }
+}

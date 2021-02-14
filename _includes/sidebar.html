@@ -1,0 +1,40 @@
+<div class="sidebar">
+  <!-- <div class="image-cropper">
+    <img src={{ "assets/home-headshot.jpg" | relative_url }} alt="" id="sidebar-photo">
+  </div> -->
+  <h3 class = "sidenav-title">wil's<br>digital<br>garden</h3>
+  <a class="" href="/blog"><span><i class="fas fa-feather-alt"></i></span> blog</a>
+  <!-- <a class="" href="/notes"><span><i class="fas fa-sticky-note"></i></span> notes</a> -->
+  <a class="" href="/codex-vitae"><span><i class="fas fa-heartbeat"></i></span> codex vitae</a>
+  <a class="" href="/reading"><span><i class="fas fa-bookmark"></i></span> bookshelf</a>
+  <a class="" href="/"><span><i class="fas fa-external-link-square-alt"></i></span> exit blog</a>
+
+  <div class="blog-icon-div">
+    <a href="https://github.com/hergyherg" target="_blank">
+      <i class="fab fa-github-square"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/wilhergenrader" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://twitter.com/wilhergenrader" target="_blank">
+      <i class="fab fa-twitter-square"></i>
+    </a>
+    <a href="https://medium.com/@hergenrader" target="_blank">
+      <i class="fab fa-medium"></i>
+    </a>
+    <p style="font-size: .7em;">© 2019 William Jensen Hergenrader.<br>All rights reserved.</p>
+  </div>
+
+</div>
+
+<script>
+  $(function() {
+    var current = location.pathname;
+    $('.sidebar a').each(function(){
+      var $this = $(this);
+      if($this.attr('href') === current){
+            $this.addClass('active');
+      }
+    })
+  });
+</script>

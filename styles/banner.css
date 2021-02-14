@@ -1,0 +1,65 @@
+
+
+.heading {
+  font-weight: 400;
+  font-size: 75px;
+  text-align: center;
+  font-family: 'Major Mono Display', monospace;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.heading .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom:0.15em;
+  visibility: hidden; /* initially hidden to prevent initial paint */
+}
+
+.heading .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: var(--seafoam-green);
+  transform-origin: 0 50%;
+}
+
+.heading .line1 {
+  top: 0;
+  left: 0;
+}
+
+.heading .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+@media screen and (max-width: 1200px) {
+  .heading {
+    font-size: 60px; /* Because of fixed nav bar */
+  }
+}
+
+@media screen and (max-width: 995px) {
+  .heading {
+    font-size: 50px; /* Because of fixed nav bar */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heading {
+    display: none;
+    font-size: 35px; /* Because of fixed nav bar */
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .heading {
+    display: none;
+    font-size: 35px; /* Because of fixed nav bar */
+  }
+}

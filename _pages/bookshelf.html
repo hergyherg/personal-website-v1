@@ -1,0 +1,20 @@
+---
+title: Recommended Books
+layout: garden
+permalink: /reading
+---
+<div class="books-container">
+  {% assign sorted = site.books | sort: 'rating' | reverse %}
+  {% for book in sorted %}
+    <div class="book-photo">
+      <img src= {{ book.cover-image-url }} alt="">
+    </div>
+    <div class="book-details">
+      <h3 style="font-weight: bold;">{{ book.title }}</h3>
+      {% assign round_rating = book.rating | round %}
+      <p>{{ book.rating }} / 5.0 {% for i in (1..round_rating) %}<i class="fas fa-star"></i>{% endfor %}</p>
+      <p style="font-family: 'Montserrat', sans-serif;">{{ book.description }}</p>
+      <a id="wil-btn" class="btn btn-primary" href={{ book.amazon-link }} role="button"><span style=" vertical-align: middle;"><i class="fab fa-amazon"></i></span> Purchase Here</a>
+    </div>
+  {% endfor %}
+</div>

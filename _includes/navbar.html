@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-md fixed-top" id="menuBar">
+        <a href="/" class="navbar-brand">
+            <img src={{ "assets/personal-logo-white.png" | relative_url }} height="50" alt="Wil Hergenrader">
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav spacing">
+                <a href={{ "/about" | relative_url }} class="nav-item nav-link">About</a>
+                <a href={{ "/experience" | relative_url }} class="nav-item nav-link">Experience</a>
+                <a href={{ "/blog" | relative_url }} class="nav-item nav-link">Blog</a>
+                <a href={{ "/projects" | relative_url }} class="nav-item nav-link">Projects</a>
+                <a href={{ "/contact" | relative_url }} class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+      $(function() {
+        var current = location.pathname;
+        $('#menuBar #navbarCollapse a').each(function(){
+          var $this = $(this);
+          if($this.attr('href') === current){
+                $this.addClass('active');
+          }
+        })
+      });
+    </script>

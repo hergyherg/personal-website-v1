@@ -1,0 +1,83 @@
+/* Importing css sections until finalized; once finalized move into single .css file */
+@import "navigation.css";
+@import "footer.css";
+@import "banner.css";
+@import "experience.css";
+@import "two-column.css";
+@import "one-column.css";
+@import "jumbotron.css";
+@import "flexgrid.css";
+@import "contact.css";
+@import "garden.css";
+@import "sidenav.css";
+
+
+:root {
+--off-white: #FAFAFA;
+--dark-grey: #999ea3;
+--seafoam-green: #00fca6;
+--dark-blue: #011638;
+--comfort-red: #d33f49;
+}
+
+
+html {
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  padding-top: 5%; /* Because of fixed nav bar */
+  background-color: var(--off-white); /* barely off-white */
+  color:  var(--dark-blue);
+}
+
+body.container-fluid {
+  position: relative;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 5%; /* Because of fixed nav bar */
+  background-color: var(--off-white); /* barely off-white */
+  color:  var(--dark-blue);
+}
+
+main.content {
+  padding-bottom: 150px;
+}
+
+.index-photo {
+    max-width: 600px;
+    max-height: 700px;
+    width: 98%;
+    -webkit-box-shadow: 0px 0px 10px #c0c0c0;
+    -moz-box-shadow: 0px 0px 10px #c0c0c0;
+    -ms-box-shadow: 0px 0px 10px #c0c0c0;
+    -o-box-shadow: 0px 0px 10px #c0c0c0;
+    box-shadow: 0px 0px 10px #c0c0c0;
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 0px 10px #c0c0c0;
+  -moz-box-shadow: 0px 0px 10px #c0c0c0;
+  -ms-box-shadow: 0px 0px 10px #c0c0c0;
+  -o-box-shadow: 0px 0px 10px #c0c0c0;
+  box-shadow: 0px 0px 10px #c0c0c0;
+}
+
+#wil-btn {
+  background-color: var(--dark-blue);
+  border-color: var(--seafoam-green);
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+  body.container-fluid {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+}

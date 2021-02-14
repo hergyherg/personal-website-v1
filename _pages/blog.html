@@ -1,0 +1,15 @@
+---
+title: Read My Blog
+layout: garden
+permalink: /blog
+---
+<div class="blog-posts-container">
+  {% for post in site.posts %}
+    <div class="blog-posts">
+      <a href={{ post.url | relative_url }}>
+        <h5>{{ post.title }}<span> [{{ post.date | date: "%Y-%m-%d" }}]</span></h5>
+        <p style="font-size: 0.9em">{{ post.description }}</p>
+      </a
+    </div>
+  {% endfor %}
+</div>

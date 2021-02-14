@@ -1,0 +1,119 @@
+
+
+/* Adjust color and padding of main navbar */
+#menuBar {
+  background-color: var(--dark-blue);
+  padding: 0 1rem;
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;
+}
+
+/* Remove top and bottom padding from navbar brand */
+#menuBar a.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Outline toggler button with green */
+#menuBar > .navbar-toggler {
+  border: 2px solid var(--seafoam-green);
+  outline: none;
+}
+
+/* Fade button background to a light green (opacity) */
+#menuBar > .navbar-toggler:hover {
+  transition-duration: 0.2s;
+  background-color: rgba(0, 252, 166, .2);
+}
+
+/* Make hamburger toggler icon green */
+#menuBar > .navbar-toggler > .navbar-toggler-icon {
+  background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 252, 166, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#menuBar div.spacing {
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+#menuBar a.nav-item {
+  color: #ffffff;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+#menuBar a.nav-item:hover {
+  color: var(--seafoam-green);
+}
+
+#menuBar #navbarCollapse a.active {
+  color: var(--seafoam-green);
+}
+
+
+/* Blog navbar - when screen is small and sidebar is collapsed */
+
+/* Adjust color and padding of main navbar */
+#blogBar {
+  background-color: var(--dark-blue);
+  padding: 0 1rem;
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;
+  display: none;
+}
+
+/* Remove top and bottom padding from navbar brand */
+#blogBar a.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Outline toggler button with green */
+#blogBar > .navbar-toggler {
+  border: 2px solid var(--seafoam-green);
+  outline: none;
+}
+
+/* Fade button background to a light green (opacity) */
+#blogBar > .navbar-toggler:hover {
+  transition-duration: 0.2s;
+  background-color: rgba(0, 252, 166, .2);
+}
+
+/* Make hamburger toggler icon green */
+#blogBar > .navbar-toggler > .navbar-toggler-icon {
+  background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 252, 166, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#blogBar div.spacing {
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+#blogBar a.nav-item {
+  color: #ffffff;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+#blogBar a.nav-item:hover {
+  color: var(--seafoam-green);
+}
+
+#blogBar #navbarCollapse a.active {
+  color: var(--seafoam-green);
+}
+
+@media screen and (max-width: 768px) {
+  #blogBar {
+    display: flex;
+  }
+}
